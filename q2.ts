@@ -6,7 +6,7 @@ interface Students {
 }
 
 // assign interface/type to the function definition properly
-function findTopNames(students) {
+function findTopNames(students:Students[]) {
   return students.filter((students) => students.score > 8).map((students) => students.name);
 }
 

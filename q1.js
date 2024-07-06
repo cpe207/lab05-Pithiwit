@@ -5,6 +5,7 @@ function buyItem(hero, shop) {
         hero.gold -= shop.price;
     }
     else {
+        return hero;
     }
 }
 //Test cases : assign proper type/interface to all objects
