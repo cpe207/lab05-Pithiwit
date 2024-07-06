@@ -11,13 +11,11 @@ interface Shop {
 
 // assign interface/type to the function definition properly
 function buyItem(hero:Hero, shop:Shop) {
-  if (hero.gold >= shop.price) {
-    hero.items.push(shop.item);
+  if (hero.gold > shop.price) {
     hero.gold -= shop.price;
+    hero.items.push(shop.item);
 }
-else{
   return hero;
-}
 }
 //Test cases : assign proper type/interface to all objects
 const hero1 = {
